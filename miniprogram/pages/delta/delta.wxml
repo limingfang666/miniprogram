@@ -1,0 +1,5 @@
+<!--pages/delta/delta.wxml-->
+<text>pages/delta/delta.wxml</text>
+<!-- delta="1"表示回退的层数 -->
+<!-- tabBar 页面是不能实现后退的效果的. 因为, 当我们跳转到 tabBar 页面，会关闭其他所有非tabBar 页面,所以当处于 tabBar 页面时, 无页面可退 -->
+<navigator open-type="navigateBack" delta="2">回到上一页basic页面</navigator>

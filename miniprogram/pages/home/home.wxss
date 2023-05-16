@@ -1,0 +1,42 @@
+/* pages/home/home.wxss */
+/* 轮播图 */
+.swiper-item image{
+  width: 100%;
+}
+
+/* 九宫格 */
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #dad8d9;
+  border-left: 1px solid #dad8d9;
+  margin: 20rpx 0;
+}
+
+.categories-item{
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40rpx 20rpx;
+  /* 设置的边框和内边距的值是包含在 width 内的。如果你将一个元素的 width 设为 100px，那么这 100px 会包含它的 border 和 padding，内容区的实际宽度是 width 减 去(border + padding) 的值 */
+  box-sizing: border-box;
+  font-size: 12px;
+  border-right: 1px solid #dad8d9;
+  border-bottom: 1px solid #dad8d9;
+}
+
+.categories-item image{
+  width: 30%;
+  
+}
+.show-image{
+  display: flex;
+  justify-content: space-around;
+}
+.show-image image{
+  margin-top: 8rpx;
+  width: 46%;
+  height: 300rpx;
+}

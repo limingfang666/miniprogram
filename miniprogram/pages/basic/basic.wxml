@@ -1,0 +1,34 @@
+<!--pages/basic/basic.wxml-->
+<!-- 声明式导航 -->
+<!-- 导航到tabBar页面 -->
+<navigator url="/pages/contact/contact" open-type="switchTab">导航到tabBar页面：到联系我们页面</navigator>
+<!-- 导航到非tabBar页面 -->
+<navigator url="/pages/logs/logs?name='zs'" open-type="navigate">导航到非tabBar页面：到日志页面</navigator>
+<!-- 导航到非tabBar页面： open-type="navigate"可以省略 -->
+<navigator url="/pages/logs/logs">导航到非tabBar页面：到日志页面，open-type="navigate"可以省略</navigator>
+<text style="color:red">编程式导航----------</text>
+<button bindtap="tapToContact" type="primary">导航到tabBar Contact页面</button>
+<button bindtap="tapToLogs" type="primary">导航到非tabBar logs页面</button>
+
+<text style="color:red">页面下拉刷新----------</text>
+<view>
+<text> count: {{count}} </text>
+ <button bindtap="plusCount">Count++</button>
+</view>
+
+<!-- <text style="color:red">下拉触底测试----------</text> -->
+<!-- <view class="reach-bottom-box"></view> -->
+<!-- 
+  1:获取随机颜色（style="background-color:rgba(0,255,214,0.3)"）
+  2:页面初始化数据 randomColor
+  3：渲染并美化结构
+  4：上拉触底，并刷新数据
+  5：loading效果
+  6：节流（节流阀）
+ -->
+<text style="color:red">上拉触底案例----------</text>
+<view>
+<view class="random-color-item" wx:for="{{randomColorList}}" wx:key="index" style="background-color: rgba({{item}},0.6);">{{item}}</view>
+</view>
+
+

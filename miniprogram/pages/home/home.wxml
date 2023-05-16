@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<swiper class="swiper-box" circular 	indicator-dots autoplay interval="3000">
+  <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}" mode="widthFix"></image>
+  </swiper-item>
+</swiper>
+<!-- 九宫格 -->
+<view class="categories">
+  <view class="categories-item" wx:for="{{categoriesList}}" wx:key="id">
+    <image src="{{item.icon}}" mode="widthFix"></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+<!-- 图片展示 -->
+<view class="show-image">
+  <image src="/images/bird.jpeg" mode="widthFix"></image>
+  <image src="/images/bird.jpeg" mode="widthFix"></image>
+</view>

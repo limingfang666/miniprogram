@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/basic/basic",
+    "pages/delta/delta",
+    "pages/home/home",
+    "pages/cate/cate",
+    "pages/contact/contact",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "backgroundColor": "#2b4b6b",
+    "color": "#FFFFFF",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath": "/images/tab_icons/home.png",
+      "selectedIconPath": "/images/tab_icons/home-active.png"
+    },{
+      "pagePath": "pages/cate/cate",
+      "text": "商城",
+      "iconPath": "/images/tab_icons/cate.png",
+      "selectedIconPath": "/images/tab_icons/cate-active.png"
+    },{
+      "pagePath": "pages/contact/contact",
+      "text": "联系我们",
+      "iconPath": "/images/tab_icons/my.png",
+      "selectedIconPath": "/images/tab_icons/my-active.png"
+    }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
