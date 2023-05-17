@@ -2,7 +2,7 @@
 App<IAppOption>({
   globalData: {},
   onLaunch() {
-    console.log("小程序启动了-----");
+    // console.log("小程序启动了-----");
     
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
@@ -18,9 +18,9 @@ App<IAppOption>({
     })
   },
   onShow(){
-    console.log("小程序从后台到前台");
+    // console.log("小程序从后台到前台");
   },
   onHide(){
-    console.log("小程序进入后台");
+    // console.log("小程序进入后台");
   }
 })

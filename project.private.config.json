@@ -11,9 +11,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "基础练习",
-          "pathName": "pages/basic/basic",
-          "query": "",
+          "name": "商品列表页",
+          "pathName": "pages/shopList/shopList",
+          "query": "id=1&title=美食",
           "launchMode": "default",
           "scene": null
         }

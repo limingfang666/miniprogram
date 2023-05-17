@@ -15,6 +15,8 @@
 <text> count: {{count}} </text>
  <button bindtap="plusCount">Count++</button>
 </view>
+<view>wxs测试：{{m1.toUpper(name)}}</view>
+<view>wxs外部文件引入测试：{{m2.tools.toLower(name)}}</view>
 
 <!-- <text style="color:red">下拉触底测试----------</text> -->
 <!-- <view class="reach-bottom-box"></view> -->
@@ -30,5 +32,13 @@
 <view>
 <view class="random-color-item" wx:for="{{randomColorList}}" wx:key="index" style="background-color: rgba({{item}},0.6);">{{item}}</view>
 </view>
+<wxs module="m1">
+  function toUpper(str){
+    return str.toUpperCase();
+  }
+  module.exports.toUpper = toUpper;
+</wxs>
+
+<wxs src="/wxs/tools.wxs" module="m2"></wxs>
 
 

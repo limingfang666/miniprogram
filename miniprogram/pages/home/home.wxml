@@ -7,10 +7,10 @@
 </swiper>
 <!-- 九宫格 -->
 <view class="categories">
-  <view class="categories-item" wx:for="{{categoriesList}}" wx:key="id">
+  <navigator url="/pages/shopList/shopList?id={{item.id}}&title={{item.name}}" class="categories-item" wx:for="{{categoriesList}}" wx:key="id">
     <image src="{{item.icon}}" mode="widthFix"></image>
     <text>{{item.name}}</text>
-  </view>
+  </navigator>
 </view>
 <!-- 图片展示 -->
 <view class="show-image">

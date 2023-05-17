@@ -1,0 +1,17 @@
+// 小程序过滤器
+function toLower(str){
+  return str.toLowerCase();
+}
+
+function formatPhoneNo(str){
+  if(str.length != 11) return str;
+  var tempArr = str.split('')
+  tempArr.splice(3,0,'-');
+  tempArr.splice(8,0,'-');
+  return tempArr.join('');
+}
+
+module.exports.tools = {
+  toLower:toLower,
+  formatPhoneNo:formatPhoneNo
+};

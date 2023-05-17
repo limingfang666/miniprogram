@@ -1,0 +1,15 @@
+<!--pages/shopList/shopList.wxml-->
+<view class="shop-list-container" wx:for="{{shopList}}" wx:key="id">
+  <view class="shop-image">
+    <image src="{{item.images[0]}}"></image>
+  </view>
+  <view class="shop-detatil">
+    <text class="shop-name">{{item.name}}</text>
+    <text>电话：{{m3.tools.formatPhoneNo(item.phone)}}</text>
+    <text>营业时间：{{item.businessHours}}</text>
+    <text>特色：{{item.supportService}}</text>
+    <text>地址：{{item.address}}</text>
+  </view>
+</view>
+<view class="bottom-box" wx:if="{{isBottom}}">~~~嘿嘿，我是有底线的~~~</view>
+<wxs src="/wxs/tools.wxs" module="m3"></wxs>

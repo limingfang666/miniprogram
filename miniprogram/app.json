@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/basic/basic",
-    "pages/delta/delta",
     "pages/home/home",
     "pages/cate/cate",
     "pages/contact/contact",
+    "pages/basic/basic",
+    "pages/shopList/shopList",
+    "pages/delta/delta",
     "pages/logs/logs"
   ],
   "tabBar": {

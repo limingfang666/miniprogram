@@ -5,7 +5,8 @@ Page({
    */
   data: {
     count:0,
-    // 声明数据喂string类型数组
+    name:"test",
+    // 声明数据为string类型数组
     randomColorList: [] as Array<string>,
     // 节流阀：现在版本已经不需要节流阀了
     isLoading: false
@@ -50,34 +51,36 @@ Page({
   onLoad() {
     // 如果正在获取数据isLoading=true则不发起请求
     this.getRandomColor();
+    console.log("onload----------");
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    console.log("onReady----------");
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    console.log("onShow----------");
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+    console.log("onHide----------");
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    console.log("onUnload----------");
   },
 
   /**

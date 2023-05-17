@@ -1,0 +1,38 @@
+/* pages/shopList/shopList.wxss */
+.shop-list-container{
+  display: flex;
+  margin: 24rpx;
+  /* border: 4rpx solid #dbdada; */
+  box-shadow: 0rpx 16rpx rgb(235, 232, 232);
+  /* border-radius: 8rpx; */
+  padding: 6rpx;
+}
+.shop-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+image{
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 20rpx;
+}
+.shop-detatil{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  justify-content: center;
+}
+
+.shop-name{
+  font-weight: bold;
+}
+
+.bottom-box{
+  text-align: center;
+  font-size: 26rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
