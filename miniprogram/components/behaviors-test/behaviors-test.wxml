@@ -1,0 +1,5 @@
+<!--components/behaviors-test/behaviors-test.wxml-->
+<van-button type="primary" bind:click="getBehaviorsInfo">点击打印behaviors方法</van-button>
+myBehaviorData:{{myBehaviorData}}
+myBehaviorProperties:{{myBehaviorProperties}}
+<van-button type="primary" bind:click="getBehaviorsFunc">获取behaviors上数据</van-button>

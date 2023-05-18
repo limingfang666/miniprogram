@@ -1,0 +1,10 @@
+/* components/my-test1/my-test1.wxss */
+.my-test1-text{
+  font-weight: bold;
+}
+.observers-randomcolor{
+  height: 200rpx;
+  color: white;
+  text-align: center;
+  line-height: 200rpx;
+}

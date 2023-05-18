@@ -16,6 +16,13 @@
           "query": "id=1&title=美食",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "基础学习",
+          "pathName": "pages/basic/basic",
+          "query": "id=1&title=%E7%BE%8E%E9%A3%9F",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

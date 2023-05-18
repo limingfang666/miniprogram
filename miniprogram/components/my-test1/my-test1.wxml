@@ -1,0 +1,23 @@
+<!--components/my-test1/my-test1.wxml-->
+<!-- <text class="my-test1-text component-text">components/my-test1/my-test1.wxml</text> -->
+<view>
+自定义组件countTest：{{countTest}}
+<button bindtap="addCount">CountTest+1: {{countTest}}</button>
+
+<view style="color:red">自定义组件----------observer监听多个属性</view>
+<view>{{num1}} + {{num2}} = {{sum}}</view>
+<button size="mini" bindtap="addNum1" type="primary">num1+1</button>
+<button size="mini" bindtap="addNum2" type="primary">num2+1</button>
+
+<view style="color:red">自定义组件----------observer对象</view>
+<view>{{obj.a}} + {{obj.b}} = {{sum2}}</view>
+<button size="mini" bindtap="addObj1" type="primary">obj.a+1</button>
+<button size="mini" bindtap="addObj2" type="primary">obj.b+1</button>
+</view>
+
+<view style="color:red">-----------数据监听observers案例----------</view>
+
+<view class="observers-randomcolor" style="background-color: rgb({{fullColor}})">{{fullColor}}</view>
+<van-button type="warning" bind:click="clickR">R</van-button>
+<van-button type="primary" bind:click="clickG">G</van-button>
+<van-button type="info" bind:click="clickB">B</van-button>

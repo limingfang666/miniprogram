@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/basic/basic",
     "pages/home/home",
     "pages/cate/cate",
     "pages/contact/contact",
-    "pages/basic/basic",
+
     "pages/shopList/shopList",
     "pages/delta/delta",
     "pages/logs/logs"
@@ -34,6 +35,8 @@
     "navigationBarTitleText": "本地生活",
     "navigationBarTextStyle": "white"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
 }

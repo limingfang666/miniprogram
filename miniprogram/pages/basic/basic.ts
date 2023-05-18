@@ -30,7 +30,7 @@ Page({
       title: '加载中',
     })
     // this.setData({isLoading:true});
-    console.log("发起请求了。。。。。。。。");
+    // console.log("发起请求了。。。。。。。。");
     wx.request({
       url:'https://applet-base-api-t.itheima.net/api/color',
       success(res: any){
@@ -44,6 +44,19 @@ Page({
     })
     // 
   },
+  //父子组件通信
+  syncCount(e:any){
+    this.setData({count: e.detail.count});
+  },
+  // 获取子组件上的方法和属性
+  getChild(){
+    // .instance-box定义在父组件调用子组件时的标签上
+    const child = this.selectComponent(".instance-box");
+    console.log(child);
+    console.log("得到子组件属性值："+JSON.stringify(child.data));
+    child._funTest();
+    
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -51,7 +64,7 @@ Page({
   onLoad() {
     // 如果正在获取数据isLoading=true则不发起请求
     this.getRandomColor();
-    console.log("onload----------");
+    // console.log("onload----------");
     
   },
 
@@ -59,35 +72,35 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    console.log("onReady----------");
+    // console.log("onReady----------");
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    console.log("onShow----------");
+    // console.log("onShow----------");
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-    console.log("onHide----------");
+    // console.log("onHide----------");
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    console.log("onUnload----------");
+    // console.log("onUnload----------");
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    console.log("下拉刷新了");
+    // console.log("下拉刷新了");
     this.setData({count:0});
     wx.stopPullDownRefresh();
   },
@@ -96,7 +109,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-console.log("上拉触底了。。。。");
+// console.log("上拉触底了。。。。");
       // if(this.data.isLoading) return 
       this.getRandomColor();
   },

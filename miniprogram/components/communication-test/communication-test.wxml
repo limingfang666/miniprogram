@@ -1,0 +1,9 @@
+<!--components/communication-test/communication-test.wxml-->
+<view>
+<view>获取父组件传递过来的count值为：{{count}}</view>
+<view>~~~~~~~~~~~~~~~~</view>
+<view>子组件改变父级传递的值，需要通知父级进行修改（小程序中properties的值也可以自己进行修改）</view>
+<van-button type="primary" bind:click="addCount">子组件操作父级的count值+1</van-button>
+
+只是测试父组件获取子组件实例方法和属性
+</view>

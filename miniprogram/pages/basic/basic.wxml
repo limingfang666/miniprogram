@@ -1,9 +1,31 @@
 <!--pages/basic/basic.wxml-->
+<!-- <text style="color:red">自定义组件----------data和properties</text> -->
+<view>
+<!-- <my-test1 max="9" bindtap="addCount"></my-test1> -->
+
+<!-- <slot-test>
+<view slot="header">这是插槽内容头部内容</view>
+<view slot="footer">这是插槽内容尾部内容</view>
+</slot-test> -->
+
+<view style="color:red">-------父子组件通信------------</view>
+<view style="color:red">-------父传子------------</view>
+父组件count值为: {{count}}
+<communication-test class="instance-box" count="{{count}}" bind:sync="syncCount"></communication-test>
+<van-button type="primary" bind:click="plusCount">父级的count值+1</van-button>
+<van-button type="info" bind:click="getChild">获取子组件实例上的方法和属性</van-button>
+</view>
+
+<behaviors-test></behaviors-test>
+
 <!-- 声明式导航 -->
 <!-- 导航到tabBar页面 -->
+<text style="color:red">声明式导航 ----------</text>
 <navigator url="/pages/contact/contact" open-type="switchTab">导航到tabBar页面：到联系我们页面</navigator>
+
 <!-- 导航到非tabBar页面 -->
 <navigator url="/pages/logs/logs?name='zs'" open-type="navigate">导航到非tabBar页面：到日志页面</navigator>
+
 <!-- 导航到非tabBar页面： open-type="navigate"可以省略 -->
 <navigator url="/pages/logs/logs">导航到非tabBar页面：到日志页面，open-type="navigate"可以省略</navigator>
 <text style="color:red">编程式导航----------</text>
@@ -17,6 +39,8 @@
 </view>
 <view>wxs测试：{{m1.toUpper(name)}}</view>
 <view>wxs外部文件引入测试：{{m2.tools.toLower(name)}}</view>
+<text style="color:red">使用vant weapp框架----------</text>
+<van-button type="primary">vant weapp button</van-button>
 
 <!-- <text style="color:red">下拉触底测试----------</text> -->
 <!-- <view class="reach-bottom-box"></view> -->
@@ -40,5 +64,6 @@
 </wxs>
 
 <wxs src="/wxs/tools.wxs" module="m2"></wxs>
+
 
 

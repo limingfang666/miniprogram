@@ -1,0 +1,5 @@
+<!--components/slot-test/slot-test.wxml-->
+<view>这是slot-test组件
+<slot name="header"></slot>
+<slot name="footer"></slot>
+</view>

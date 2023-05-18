@@ -1,5 +1,10 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "my-test1":"/components/my-test1/my-test1",
+    "slot-test":"/components/slot-test/slot-test",
+    "behaviors-test":"/components/behaviors-test/behaviors-test",
+    "communication-test":"/components/communication-test/communication-test"
+  },
   "enablePullDownRefresh": true,
   "backgroundColor": "#00ffff",
   "backgroundTextStyle": "dark"
